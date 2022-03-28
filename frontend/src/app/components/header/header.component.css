@@ -1,0 +1,35 @@
+/* p {
+    background-color: rgb(42, 116, 165);
+    color: white;
+    height: 75px;
+    font-size: 34pt;
+    text-align: center;
+    padding-top: 15px;
+} */
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo {
+    max-height: 32px;
+}
+
+.header .title-group {
+    padding-left: 25px;
+}
+
+.header .title-group i {
+    padding-right: 5px;
+}
+
+.header .title-system {
+    margin: 0 auto;
+}
