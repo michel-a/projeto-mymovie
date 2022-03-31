@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { MainComponent } from './components/main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -15,6 +14,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { MovieCrudComponent } from './views/movie-crud/movie-crud.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { HttpClientModule } from '@angular/common/http';
+import { MovieCreateComponent } from './components/movie/movie-create/movie-create.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +30,9 @@ import { MovieCrudComponent } from './views/movie-crud/movie-crud.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    MainComponent,
     HomeComponent,
-    MovieCrudComponent
+    MovieCrudComponent,
+    MovieCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +41,13 @@ import { MovieCrudComponent } from './views/movie-crud/movie-crud.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule,
+    MatButtonModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

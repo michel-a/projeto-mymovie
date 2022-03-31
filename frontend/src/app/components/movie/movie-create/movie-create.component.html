@@ -1,0 +1,49 @@
+<mat-card>
+    <mat-card-title>Novo Filme</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título Traduzido"
+                [(ngModel)]="movie.translatedTitle"
+                name="translatedTitle"
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Título Original"
+                [(ngModel)]="movie.originalTitle"
+                name="originalTitle"
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Ano de Lançamento"
+                [(ngModel)]="movie.releaseYear"
+                name="releaseYear"
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Gênero"
+                [(ngModel)]="movie.genre"
+                name="genre"
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Áudio"
+                [(ngModel)]="movie.audio"
+                name="audio"
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tamanho"
+                [(ngModel)]="movie.size"
+                name="size"
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Duração"
+                [(ngModel)]="movie.duration"
+                name="duration"
+            />
+        </mat-form-field>
+    </form>
+    <button class="btn" mat-flat-button color="primary" (click)="createMovie()">Salvar</button>
+    <button class="btn" mat-flat-button color="warn" (click)="cancel()">Cancelar</button>
+</mat-card>
